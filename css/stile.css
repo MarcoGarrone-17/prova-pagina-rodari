@@ -57,8 +57,15 @@ header nav ul a:hover {
 }
 
 .info {
-    margin: auto;
     background-color: black;
+    margin: auto;
+    align-items: center;
+}
+
+.container_1 {
+    background-color: white;
+    color: #222;
+    margin: auto;
     align-items: center;
 }
 
@@ -87,31 +94,31 @@ header nav ul a:hover {
     font-size: 15px;
 }
 
-.container_1 {
-    background-color: white;
-    color: #222;
-    width: auto;
-    height: auto;
+.binomio-fantastico, .fiabe-cinema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 110px 70px;
-    justify-content: space-between;
-    display: flex;
     gap: 32px;
 }
 
-.grammatica_fantasia {
+.binomio-fantastico img, .container_2 img {
     width: 400px;
     height: 100%;
-    margin: auto;
     object-fit: contain;
+    margin: auto;
 }
 
 .container_1 h2 {
     font-size: 50px;
 }
 
+.testo-binomio, .testo-fiabe-cinema {
+    max-width: 682px;
+    margin: auto;
+}
+
 .container_1 div p {
     color: #464646;
-    max-width: 900px;
     height: auto;
     font-size: 15px;
     line-height: 1.6;
@@ -123,10 +130,8 @@ header nav ul a:hover {
     color: #D8D8D8;
     width: auto;
     height: auto;
-    padding: 110px 70px;
-    justify-content: space-between;
-    display: flex;
-    gap: 32px;
+    margin: auto;
+    align-items: center;
 }
 
 .container_2 h2 {
@@ -135,7 +140,7 @@ header nav ul a:hover {
 }
 
 .container_2 p {
-    max-width: 900px;
+    max-width: 682px;
     height: auto;
     font-size: 15px;
     line-height: 150%;
@@ -144,14 +149,6 @@ header nav ul a:hover {
 .poesia {
     font-style: italic;
     margin: 20px 20px;
-}
-
-.container_2 img {
-    width: 400px;
-    height: 100%;
-    object-fit: contain;
-    margin: auto;
-    align-items: center;
 }
 
 .picture {
@@ -227,24 +224,9 @@ footer nav ul a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-    header {
-        height: auto;
-        flex-direction: column;
-        gap: 10px;
-        padding: 30px 50px;
-        align-items: baseline;
-    }
-    
-    header p {
-        font-weight: bold; 
-        font-size: 25px;
-    }
-    
+@media (max-width: 1000px) {
     header nav ul {
-        display: flex;
-        list-style-type: none;
-        gap: 40px;
+        gap: 20px;
     }
     
     .hero {
@@ -268,17 +250,16 @@ footer nav ul a:hover {
     .hero img {
         margin: auto;
         justify-content: center;
-        
     }
 
     .info h1 {
         font-size: 45px;
     }
 
-    .container_1 {
-        flex-direction: column;
+    .binomio-fantastico {
         background-color: white;
         color: #222;
+        grid-template-columns: 1fr;
         padding: 50px 30px;
     }
 
@@ -288,8 +269,8 @@ footer nav ul a:hover {
         margin-top: 15px;
     }
 
-    .container_2 {
-        flex-direction: column;
+    .fiabe-cinema {
+        grid-template-columns: 1fr;
         padding: 50px 30px;
     }
 
@@ -298,7 +279,6 @@ footer nav ul a:hover {
     }
 
     .picture {
-        max-width: 700px;
         height: 700px;
         margin: auto;
     }
@@ -308,6 +288,27 @@ footer nav ul a:hover {
         gap: 40px;
         padding: 40px 100px;
     }
+}
+
+@media (max-width: 850px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px 50px;
+        align-items: baseline;
+    }
+    
+    header p {
+        font-weight: bold; 
+        font-size: 25px;
+    }
+    
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 40px;
+    }
 
     footer {
         height: auto;
@@ -315,5 +316,26 @@ footer nav ul a:hover {
         gap: 10px;
         padding: 30px 50px;
         align-items: baseline;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px 50px;
+        align-items: baseline;
+    }
+    
+    header p {
+        font-weight: bold; 
+        font-size: 25px;
+    }
+    
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 40px;
     }
 }
