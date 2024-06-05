@@ -281,7 +281,7 @@ footer nav ul a:hover {
 
     .picture {
         width: auto;
-        height: ;
+        height: auto;
         margin: auto;
         object-fit: cover;
     }
