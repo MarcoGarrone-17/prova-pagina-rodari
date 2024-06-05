@@ -62,13 +62,6 @@ header nav ul a:hover {
     align-items: center;
 }
 
-.container_1 {
-    background-color: white;
-    color: #222;
-    margin: auto;
-    align-items: center;
-}
-
 .hero {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -94,35 +87,50 @@ header nav ul a:hover {
     font-size: 15px;
 }
 
-.binomio-fantastico, .fiabe-cinema {
+.fiabe-cinema {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 110px 70px;
     gap: 32px;
 }
 
-.binomio-fantastico img, .container_2 img {
+.container_2 img {
     width: 400px;
     height: 100%;
     object-fit: contain;
     margin: auto;
 }
 
-.container_1 h2 {
-    font-size: 50px;
-}
-
-.testo-binomio, .testo-fiabe-cinema {
-    max-width: 682px;
+.colore-1 {
+    background-color: white;
+    color: #222;
+    display: flex;
+    gap: 32px;
     margin: auto;
 }
 
-.container_1 div p {
+.colore-1 .text {
+    width: 66%;
+}
+
+.colore-1 .text p {
     color: #464646;
     height: auto;
     font-size: 15px;
     line-height: 1.6;
-    margin-top: 250px;
+}
+
+.colore-1 .image {
+    width: 33%;
+}
+
+.colore-1 h2 {
+    font-size: 50px;
+}
+
+.testo-fiabe-cinema {
+    max-width: 682px;
+    margin: auto;
 }
 
 .container_2 {
@@ -175,7 +183,6 @@ header nav ul a:hover {
     margin: 0;
     font-size: 15px;
     line-height: 1.6;
-    
 }
 
 .chiusura {
@@ -256,14 +263,14 @@ footer nav ul a:hover {
         font-size: 45px;
     }
 
-    .binomio-fantastico {
+    .contenitore {
         background-color: white;
         color: #222;
         grid-template-columns: 1fr;
         padding: 50px 30px;
     }
 
-    .container_1 div p {
+    .colore-1 div p {
         font-size: 15px;
         line-height: 1.6;
         margin-top: 15px;
