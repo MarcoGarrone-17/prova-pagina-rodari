@@ -248,10 +248,6 @@ footer nav ul a:hover {
 
     }
 
-    .container .text {
-        width: auto;
-    }
-
     .container .text h2 {
         font-size: 50px;
         font-weight: 600;
@@ -264,6 +260,8 @@ footer nav ul a:hover {
     }
 
     .container {
+        width: auto;
+        height: auto;
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
@@ -283,7 +281,7 @@ footer nav ul a:hover {
 
     .picture {
         width: auto;
-        height: auto;
+        height: ;
         margin: auto;
         object-fit: cover;
     }
@@ -361,5 +359,18 @@ footer nav ul a:hover {
         display: flex;
         list-style-type: none;
         gap: 40px;
+    }
+    
+    .container .text {
+        width: auto;
+    }
+    
+    .container .image {
+        width: auto;
+        margin: auto;
+    }
+
+    .chiusura {
+        padding: 20px 50px;
     }
 }
