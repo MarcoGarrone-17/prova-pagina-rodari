@@ -157,6 +157,15 @@ header nav ul a:hover {
     gap: 200px;
 }
 
+.anim p {
+    max-width: 580px;
+}
+
+.cit {
+    display: flex;
+    align-items: flex-end;
+}
+
 .chiusura {
     background-color: black;
     color: white;
@@ -244,8 +253,7 @@ footer nav ul a:hover {
     .colore-2 {
         background-color: black;
         color: #D8D8D8;
-        padding: 80px 50px;
-
+        padding: 50px 30px;
     }
 
     .container .text h2 {
@@ -266,6 +274,11 @@ footer nav ul a:hover {
         grid-template-columns: 1fr;
         padding: 0;
         gap: 35px;
+    }
+
+    .container .text {
+        margin: auto;
+        width: 66%;
     }
 
     .container div p {
@@ -299,6 +312,10 @@ footer nav ul a:hover {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 0;
+    }
+    
+    .anim p {
+        margin: auto;
     }
 
     .chiusura {
